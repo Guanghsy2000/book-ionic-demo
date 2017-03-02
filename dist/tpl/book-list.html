@@ -1,0 +1,27 @@
+
+<!--书籍信息展示区-->
+<!--注意:这里一定要用 ion-content 标签包裹着最外层,不然会导致页面无法拖动-->
+<ion-content style="margin-top: 40px;" id="booklist">
+    <div class="card" ng-repeat="i in booklist">
+        <div class="item item-text-wrap" >
+            <a class="item item-thumbnail-left" href="{{i.link}}" >
+                <img src="{{i.img}}">
+                <ul class="book-content">
+                    <li class="book-title">{{i.title}}</li>
+                    <li class="book-author">作者:<em>{{i.author}}</em></li>
+                    <li class="book-publisher">出版社:<em>{{i.publisher}}</em></li>
+                    <li class="book-price">价格:<em>{{i.price}}<em></li>
+                </ul>
+                <!--<h2 class="books-title">{{i.title}}</h2>
+                <b class="books-publisher">出版社:<em>{{i.publisher}}</em></b>
+                <b class="books-price">{{i.price}}</b>-->
+            </a>
+        </div>
+
+        
+    </div>
+    <button ng-click="bookAdd(pageSum)" class="button button-block button-positive" style="width:90%;margin: 0 auto 100px;" >
+    {{end?'这是最底页':'点击加载更多'}}
+    </button>
+    
+</ion-content>

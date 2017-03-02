@@ -1,0 +1,62 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+/*页头*/
+.bar-dark .title{
+    font-family: "楷体";
+    font-size: 20px;
+}
+
+/*书籍信息展示开始*/
+#booklist .book-content{
+    font-size: 14px;
+    color: #426ab3;
+}
+#booklist .book-title{
+    font-size: 14px;
+    color: #87843b;
+    overflow: hidden;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 18px;
+}
+
+#booklist .book-author{
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 18px;
+}
+#booklist .book-author em{
+    color: #87843b; 
+}
+#booklist .book-publisher{
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 18px;
+}
+#booklist .book-publisher em{
+    color: #87843b; 
+}
+#booklist .book-price{
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 18px;
+}
+
+#booklist .book-price em{
+    color: #87843b; 
+}
+
+
+
+
+/*书籍信息展示结束*/

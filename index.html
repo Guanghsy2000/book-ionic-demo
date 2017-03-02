@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>inico-demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <link href="http://cdn.bootcss.com/ionic/1.3.2/css/ionic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/lib/css/style.css">
+</head>
+
+<body>
+    <div ng-app="app" ng-controller="mainCtrl">
+        <ion-side-menus>
+            <!-- 左侧边栏 -->
+
+            <ion-side-menu side="left">
+                <div class="list">
+                    <div class="item item-divider">
+                        书籍分类信息
+                    </div>
+                    <a class="item" href="#/foods/{{i.code}}" ng-repeat="i in booktype">
+                    {{i.name}}
+                </a>
+                </div>
+
+            </ion-side-menu>
+
+            <ion-side-menu-content>
+                <!-- 内容区域 -->
+                <div class="bar bar-header bar-dark">
+                    <a class="button icon ion-navicon" ng-click="toggleLeft()"></a>
+                    <h1 class="title">ionic-书籍展示</h1>
+                    <a class="button icon ion-gear-a" ng-click="toggleRight()"></a>
+                </div>
+
+
+
+                <div ng-view></div>
+
+                <div class="bar bar-footer bar-dark">
+                    <a class="title" href="#/">我是下导航,暂时点我可以到首页</a>
+                </div>
+            </ion-side-menu-content>
+
+            <!-- 右侧边栏 -->
+            <ion-side-menu side="right">
+                <div class="list card">
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-home"></i> 家庭住址..
+                    </a>
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-ios-telephone"></i> 电话号码..
+                    </a>
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-wifi"></i> 无线网络
+                    </a>
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-card"></i> 信用卡信息
+                    </a>
+
+                </div>
+            </ion-side-menu>
+
+
+        </ion-side-menus>
+
+    </div>
+
+
+
+
+
+
+    <script src="http://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.js"></script>
+    <script src="./dist/lib/js/angular-route.min.js"></script>
+    <script src="./dist/lib/js/angular-sanitize.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./dist/services/api_services.js"></script>
+    <script src="./dist/controllers/left-menu.js"></script>
+</body>
+
+</html>
