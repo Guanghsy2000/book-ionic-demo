@@ -16,6 +16,7 @@ http://localhost:8081进入主页面
     已经完成左侧导航栏,图书分类,单击后可以查看该分类的图书信息,路由端口是本地数据库.
 ```
 效果展示(图片为gif图,网络原因可能会造成轻微卡顿,刷新页面即可)
+
 ![效果展示](https://raw.githubusercontent.com/Guanghsy2000/book-ionic-demo/master/demo.gif)
 
 
